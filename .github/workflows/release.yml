@@ -20,6 +20,6 @@ jobs:
      - run: flutter build linux
      - uses: ncipollo/release-action@v1
        with:
-        artifacts: "build/linux/x64/release/bundle"
+        artifacts: "build/linux/x64/release/bundle/docker_desktop_linux"
         token: ${{ secrets.GITHUB_TOKEN }}
         bodyFile: "release_log.md"
